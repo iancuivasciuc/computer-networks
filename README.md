@@ -14,6 +14,12 @@
 - [USENIX](https://www.usenix.org/conferences) academic conference
 - [BlackHat](https://www.blackhat.com/) conference
 
+### Other courses
+- [Web Security](https://web.stanford.edu/class/cs253/)
+- [Computer and Network Security](https://engineering.purdue.edu/kak/compsec/NewLectures/)
+- [Top-down Apporach](https://gaia.cs.umass.edu/kurose_ross/index.php)
+- [Archaeology of Intelligent Machines](https://github.com/senisioi/archaeology)
+
 ### Open Software
 - [snowflake proxy](https://snowflake.torproject.org/)
 - [de-google-ify the internet](https://degooglisons-internet.org/en/)
