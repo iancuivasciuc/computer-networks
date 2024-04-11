@@ -25,6 +25,7 @@ sudo apt install -y build-essential \
                     tmux \
                     netcat \
                     inetutils-* && \
+sudo pip install scapy && \
 sudo apt-get install -y \
     apt-transport-https \
     ca-certificates \
