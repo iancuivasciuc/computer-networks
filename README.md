@@ -19,6 +19,7 @@
 - [Computer and Network Security](https://engineering.purdue.edu/kak/compsec/NewLectures/)
 - [Top-down Apporach](https://gaia.cs.umass.edu/kurose_ross/index.php)
 - [Archaeology of Intelligent Machines](https://github.com/senisioi/archaeology)
+- [Computer Networking Fundamentals](https://labs.iximiuz.com/courses/computer-networking-fundamentals/)
 
 ### Open Software
 - [snowflake proxy](https://snowflake.torproject.org/)
