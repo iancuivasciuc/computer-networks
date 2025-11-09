@@ -8,6 +8,7 @@ services:
         tty: true
         networks:
             - dmz
+            - net
         sysctls:
           - net.ipv4.icmp_echo_ignore_broadcasts=0
     rt2:
@@ -28,5 +29,43 @@ services:
             - dmz
         sysctls:
           - net.ipv4.icmp_echo_ignore_broadcasts=0
+    rt4:
+        image: snisioi/retele:2021
+        volumes:
+            - .:/elocal
+        tty: true
+        networks:
+            - net
+        sysctls:
+          - net.ipv4.icmp_echo_ignore_broadcasts=0
+    rt5:
+        image: snisioi/retele:2021
+        volumes:
+            - .:/elocal
+        tty: true
+        networks:
+            - net
+        sysctls:
+          - net.ipv4.icmp_echo_ignore_broadcasts=0
+    rt6:
+        image: snisioi/retele:2021
+        volumes:
+            - .:/elocal
+        tty: true
+        networks:
+            - net
+        sysctls:
+          - net.ipv4.icmp_echo_ignore_broadcasts=0
 networks:
-    dmz: {}
+    dmz:
+        ipam:
+            driver: default
+            config:
+                - subnet: 172.111.0.0/16
+                  gateway: 172.111.0.1
+    net:
+        ipam:
+            driver: default
+            config:
+                - subnet: 198.13.0.0/16
+                  gateway: 198.13.0.1
