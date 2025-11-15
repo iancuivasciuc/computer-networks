@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
     rt1:
-        image: snisioi/retele:2021
+        image: retele:latest
         volumes:
             - .:/elocal
         tty: true
@@ -11,7 +11,7 @@ services:
         ports:
          - "8080:8080"
     rt2:
-        image: snisioi/retele:2021
+        image: retele:latest
         volumes:
             - .:/elocal
         tty: true
