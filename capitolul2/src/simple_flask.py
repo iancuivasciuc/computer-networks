@@ -17,6 +17,13 @@ def post_method():
     print(request.get_json()['value']*2)
     return jsonify({'got_it': 'yes'})
 
+@app.route('/double')
+def double_method_get():
+    return jsonify({'double' : int(request.args['value']) * 2})
+
+@app.route('/double', methods=['POST'])
+def double_method_post():
+    return jsonify({'double' : request.get_json()['value'] * 2})
 
 @app.route('/<name>')
 def hello_name(name):
