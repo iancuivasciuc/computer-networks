@@ -8,7 +8,7 @@ logging.basicConfig(format = u'[LINE:%(lineno)d]# %(levelname)-8s [%(asctime)s] 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, proto=socket.IPPROTO_UDP)
 
 port = 10000
-adresa = 'localhost'
+adresa = '172.9.0.2'
 server_address = (adresa, port)
 mesaj = sys.argv[1]
 
